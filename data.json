@@ -1,9 +1,24 @@
 [
   {
+    "file": "Nergal_God.webp",
+    "tags": [
+      "male",
+      "fantasy",
+      "AI"
+    ]
+  },
+  {
+    "file": "Thief_War.webp",
+    "tags": [
+      "male",
+      "fantasy",
+      "AI"
+    ]
+  },
+  {
     "file": "Tellus_Earth.webp",
     "tags": [
       "female",
-      "earth",
       "fantasy",
       "AI"
     ]
@@ -12,7 +27,6 @@
     "file": "Lunar_Nox.webp",
     "tags": [
       "female",
-      "lunar",
       "fantasy",
       "AI"
     ]
@@ -21,7 +35,6 @@
     "file": "Boreas_God.webp",
     "tags": [
       "male",
-      "frost",
       "fantasy",
       "AI"
     ]
@@ -31,7 +44,6 @@
     "tags": [
       "male",
       "orcish",
-      "fantasy",
       "AI"
     ]
   },
@@ -40,7 +52,6 @@
     "tags": [
       "male",
       "orcish",
-      "fantasy",
       "AI"
     ]
   },
@@ -48,7 +59,6 @@
     "file": "Vesta_Fire.webp",
     "tags": [
       "female",
-      "fire",
       "fantasy",
       "AI"
     ]
@@ -56,7 +66,6 @@
   {
     "file": "Wolf_Mother.webp",
     "tags": [
-      "female",
       "beast",
       "fantasy",
       "AI"
@@ -74,7 +83,6 @@
     "file": "Sea_God.webp",
     "tags": [
       "male",
-      "storm",
       "fantasy",
       "AI"
     ]
@@ -92,7 +100,6 @@
     "tags": [
       "male",
       "orcish",
-      "fantasy",
       "warcraft"
     ]
   },
@@ -100,7 +107,6 @@
     "file": "Dr_Doom.webp",
     "tags": [
       "male",
-      "scenario",
       "sci-fi",
       "marvel"
     ]
@@ -109,7 +115,6 @@
     "file": "Solar_Knight.webp",
     "tags": [
       "male",
-      "solar",
       "fantasy",
       "AI"
     ]
