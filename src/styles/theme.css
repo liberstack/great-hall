@@ -1,0 +1,85 @@
+/* ==========================================================
+   theme.css — tema claro + botão de alternância
+   Carregar DEPOIS de style.css.
+   O tema escuro é o padrão definido em style.css (:root).
+   ========================================================== */
+
+:root {
+  color-scheme: dark;
+}
+
+/* ---------- tema claro: sobrescreve apenas as variáveis ---------- */
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #f3efe4;
+  --bg-elev: #eae5d6;
+  --plate: #2a261d;
+  --plate-dim: #4a4536;
+  --brass: #8a6a35;
+  --brass-dim: #b59a6a;
+  --text: #2a261d;
+  --text-dim: #6f6957;
+  --border: #d5cfbd;
+}
+
+/* Filtro ativo: texto claro sobre o latão escuro */
+:root[data-theme="light"] .filters button.active {
+  color: #f3efe4;
+}
+
+/* Elementos sobre imagem ou sobre o viewer (fundo sempre escuro)
+   mantêm a paleta escura nos dois temas. */
+:root[data-theme="light"] .card__plate,
+:root[data-theme="light"] .card__index,
+:root[data-theme="light"] .viewer {
+  --plate: #e8e2d0;
+  --brass: #b08d57;
+  --text-dim: #a8a28f;
+  --border: #332f26;
+  --bg-elev: #1c1a15;
+}
+
+/* ---------- botão de alternância ---------- */
+
+.site-head {
+  position: relative;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1.4rem;
+  right: 6vw;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  color: var(--text-dim);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  opacity: 0.75;
+  cursor: pointer;
+  transition: opacity 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.theme-toggle:hover {
+  opacity: 1;
+  border-color: var(--brass-dim);
+  color: var(--plate);
+}
+
+.theme-toggle:focus-visible {
+  opacity: 1;
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+
+/* suaviza a troca de cor apenas depois do carregamento inicial */
+.theme-ready body,
+.theme-ready .card,
+.theme-ready .filters button {
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
