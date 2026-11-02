@@ -1,4 +1,4 @@
-const IMG_DIR = "gallery/";
+const IMG_DIR = "src/assets/";
 
 const wall = document.getElementById("wall");
 const filtersEl = document.getElementById("filters");
@@ -22,7 +22,7 @@ init();
 
 async function init() {
   try {
-    const res = await fetch("data.json");
+    const res = await fetch("src/data/data.json");
     if (!res.ok) throw new Error("data.json não encontrado");
     items = await res.json();
   } catch (err) {
